@@ -1,11 +1,11 @@
 # Lamport-Logical-Clocks
 
-###Summary
+### Summary
 Most of us use physical time to order events. For example, we say that an event at 8:15 AM occurs before an event at 8:16 AM. In distributed systems, physical clocks are not always precise, so we can't rely on physical time to order events.
 Instead, we can use logical clocks to create a partial or total ordering of events. For such case, We need to identify the Lamport logical clock timestamp for each message that was sent and received. This will be achieved by calculating the lamport logical value of an event using the Lamport Calculate algorithm and this can be verified using Lamport Verify algorithm.
 
-###Pseudo Codes:
-###Algorithm Calculate:
+### Pseudo Codes
+### Algorithm Calculate:
 Send events starts with ‘s’ and receiver events are ‘r’, ‘Null’ represents nothing, rest all alphabets are considered as internal events.
    Step 1: Enter the input
 	  Enter the number of processes(rows) and the number of events in a process(columns)
@@ -25,7 +25,7 @@ Send events starts with ‘s’ and receiver events are ‘r’, ‘Null’ repr
    Step 3:  Print the output
             Loop comes to an end when it reaches the number of processes and the events in the process,   the execution is completed. Now, Print the output matrix which has the updated values.
 
-###Algorithm Verify:
+### Algorithm Verify:
 All the positive integers are treated as events and there is an event with 0, it is considered as NULL.
    Step 1: Enter the input in a file called verify.txt
    Step 2: Read the input from file and store it in a matrix. 
